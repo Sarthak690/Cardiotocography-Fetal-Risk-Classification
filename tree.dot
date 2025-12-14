@@ -1,0 +1,22 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="AC <= -0.624\ngini = 0.368\nsamples = 1488\nvalue = [1159, 194, 135]\nclass = NSP", fillcolor="#eca16b"] ;
+1 [label="LB <= 0.325\ngini = 0.596\nsamples = 609\nvalue = [332, 163, 114]\nclass = NSP", fillcolor="#f5cfb4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="DP <= 0.805\ngini = 0.477\nsamples = 349\nvalue = [236, 28, 85]\nclass = NSP", fillcolor="#f0b78e"] ;
+1 -> 2 ;
+3 [label="UC <= -0.759\ngini = 0.349\nsamples = 281\nvalue = [223, 26, 32]\nclass = NSP", fillcolor="#eb9e67"] ;
+2 -> 3 ;
+4 [label="LB <= -1.098\ngini = 0.602\nsamples = 87\nvalue = [47, 19, 21]\nclass = NSP", fillcolor="#f5cdb1"] ;
+3 -> 4 ;
+5 [label="FM <= -0.155\ngini = 0.263\nsamples = 27\nvalue = [23, 2, 2]\nclass = NSP", fillcolor="#e99559"] ;
+4 -> 5 ;
+6 [label="gini = 0.355\nsamples = 19\nvalue = [15, 2, 2]\nclass = NSP", fillcolor="#eb9f68"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 8\nvalue = [8, 0, 0]\nclass = NSP", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="LB <= 0.02\ngini = 0.659\nsamples = 60\nvalue = [24, 17, 19]\nclass = NSP", fillcolor="#fcf0e7"] ;
+4 -> 8 ;
+9 [label="gini = 0.639\nsamples = 47\nvalue = [21, 16, 10]\nclass = NSP", fillcolor="#fbebdf"] ;
+8 -> 9 ;
